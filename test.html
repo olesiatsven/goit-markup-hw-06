@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form>
+			<label>
+				Почта
+				<input type="email" name="email" />
+			</label>
+
+			<label>
+				Пароль
+				<input type="password" name="pwd" />
+			</label>
+		</form>
+
+		<div role="group">
+			<p>Выберите цвет футболки:</p>
+
+			<label for="color-1">Красный</label>
+			<input id="color-1" name="color" type="radio" />
+
+			<label for="color-2">Белый</label>
+			<input id="color-2" name="color" type="radio" value="white" />
+
+			<label for="color-3">Зелёный</label>
+			<input id="color-3" name="color" type="radio" value="green" />
+		</div>
+
+		<div role="group">
+			<p>Чем вы увлекаетесь?:</p>
+
+			<label for="hobby-1">Музыка</label>
+			<input id="hobby-1" name="hobby" type="checkbox" value="music" />
+
+			<label for="hobby-2">Спорт</label>
+			<input id="hobby-2" name="hobby" type="checkbox" value="sports" />
+
+			<label for="hobby-3">Чтение</label>
+			<input id="hobby-3" name="hobby" type="checkbox" value="reading" />
+		</div>
+
+		<label for="age">Возраст</label>
+
+		<input id="age" type="number" name="age" />
+		<label for="age">Возраст</label>
+
+		<input id="age" type="number" min="18" max="120" />
+
+		<label for="age">Возраст</label>
+
+		<input id="age" name="age" type="number" min="18" max="120" step="0.1" />
+
+		<input type="tel" name="telephone" />
+
+		<label for="age">Возраст</label>
+		<input id="age" type="range" name="age" min="0" max="120" value="30" />
+
+		<input type="file" дополнительные-атрибуты />
+
+		<label for="avatar">Загрузить аватар</label>
+		<input type="file" id="avatar" name="avatar" accept="image/jpeg,image/png" />
+
+		<label for="birth_date">Дата рождения</label>
+		<input id="birth_date" name="birth_date" type="date" min="1920-01-01" max="2020-01-01" />
+
+		<label for="color">Цвет</label>
+		<input id="color" name="color" type="color" />
+
+		<!-- textarea -->
+
+		<textarea name="comment" rows="5" cols="45" placeholder="Оставьте комментарий"></textarea>
+
+		<!-- <select> -->
+
+		<label for="size">Размер футболки</label>
+		<select id="size" name="size">
+			<option value="xs">Extra Small</option>
+			<option value="s">Small</option>
+			<option value="m">Medium</option>
+			<option value="l">Large</option>
+		</select>
+
+		<!-- <optgroup> -->
+
+		<select name="month">
+			<optgroup label="Лето">
+				<option value="s6">Июнь</option>
+				<option value="s7">Июль</option>
+				<option value="s8">Август</option>
+			</optgroup>
+
+			<optgroup label="Осень">
+				<option value="s9">Сентябрь</option>
+				<option value="s10">Октябрь</option>
+				<option value="s11">Ноябрь</option>
+			</optgroup>
+		</select>
+
+		<!-- <datalist> -->
+		<label for="fav">Выберите свой любимый браузер:</label>
+		<input list="browsers" name="fav" id="fav" />
+
+		<datalist id="browsers">
+			<option>Edge</option>
+			<option>Firefox</option>
+			<option>Chrome</option>
+			<option>Opera</option>
+			<option>Safari</option>
+		</datalist>
+
+		<!-- value in <datalist> -->
+		<label for="branch">Отделение:</label>
+		<input type="text" name="branch" id="branch" list="codes" />
+
+		<datalist id="codes">
+			<option value="3600">Шевченковский район</option>
+			<option value="7493">Железоугорский район</option>
+			<option value="2701">Центральный район</option>
+			<option value="5692">Зелёногорский район</option>
+		</datalist>
+	</body>
+</html>
