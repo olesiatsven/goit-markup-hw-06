@@ -107,6 +107,7 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
 	color: var(--accent-color);
+	transition: color 250ms var(--animation);
 }
 
 .site-nav .link {
@@ -188,6 +189,8 @@ img {
 	align-items: stretch;
 	margin-right: 10px;
 	fill: var(--primery-text-color);
+	transition: fill 250ms var(--animation);
+
 }
 
 .contacts .link:hover .svg {
@@ -447,6 +450,7 @@ a:hover svg {
 	width: 20px;
 	height: 20px;
 	fill: var(--social-icons-color);
+	transition: fill 250ms var(--animation);
 	/* fill: var(--social-icons-color); */
 }
 
@@ -587,10 +591,11 @@ a:hover svg {
 
 .footer-icons {
 	margin-top: 12px;
-	margin-left: 70px;
+
 	width: 207px;
 	height: 80px;
 	align-items: center;
+	margin-right: 93px;
 }
 
 .social-text {
@@ -629,13 +634,12 @@ a:hover svg {
 }
 
 .footer-info {
-	display: inline-flex;
-	flex-direction: column;
+	margin-right: 70px;
 }
 
 .container-footer {
 	display: flex;
-	width: 1170px;
+	width: 1200px;
 	padding: 60px 15px;
 	margin-left: auto;
 	margin-right: auto;
@@ -742,9 +746,12 @@ a:hover svg {
 	font-size: 18px;
 	line-height: 36px;
 	letter-spacing: 0.06em;
-	margin-left: 24px;
+	/* margin-left: 24px;
 	margin-right: 24px;
-	margin-top: 20px;
+	margin-top: 20px; */
+}
+.portfolio-text {
+	padding: 20px 24px;
 }
 
 /* Overlay */
@@ -789,10 +796,10 @@ a:hover svg {
 }
 
 .portfolio-category {
-	margin-top: 4px;
+	/* margin-top: 4px;
 	margin-left: 24px;
 	margin-right: 24px;
-	margin-bottom: 20px;
+	margin-bottom: 20px; */
 }
 
 /* Modal */
@@ -1042,8 +1049,8 @@ text-align: left;
 /* submit-form */
 
 .subscription-container{
-	margin-top: 5px;
-    margin-left: 70px;
+	width: 570px;
+    height: 80px;
 
 }
 
@@ -1051,8 +1058,15 @@ text-align: left;
 .form-subs {
 	display: flex;
 	align-items: flex-end;
-	
+
 }
+
+.input-subs:hover {
+	border: 1px solid #fff;
+}
+
+
+
 .text-subs {
 	
 	margin-top: 0;
