@@ -110,6 +110,15 @@ img {
 	transition: color 250ms var(--animation);
 }
 
+
+.site-nav .link.line:hover,
+ .site-nav .link.line:focus,
+  .site-nav .link.line {
+	  color:var(--accent-color);
+  }
+
+
+
 .site-nav .link {
 	position: relative;
 	content: "";
